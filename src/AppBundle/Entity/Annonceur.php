@@ -162,5 +162,21 @@ class Annonceur
     {
         return $this->password;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getAnnonces()
+    {
+        return $this->annonces;
+    }
+
+    /**
+     * @param ArrayCollection $annonces
+     */
+    public function setAnnonces($annonces)
+    {
+        $this->annonces = $annonces;
+    }
 }
 

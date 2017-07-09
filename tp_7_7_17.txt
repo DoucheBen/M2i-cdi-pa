@@ -1,7 +1,7 @@
 site de petites annonces immobilières
 	- en tant que visiteur je souhaite consulter la liste des annonces
 	- en tant que visiteur je souhaite filtrer la liste  des annonces
-	par code postalet/ou prix
+	par code postal et/ou prix
 	- en tant qu'annonceur je souhaite m'inscrire
 	- en tant qu'annonceur je souhaite me connecter
 	-en tant qu'annonceur connecté je souhaite ajouter une annonce

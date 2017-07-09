@@ -24,9 +24,9 @@ class LoadAnnonceurFixture extends AbstractFixture implements OrderedFixtureInte
     public function load(ObjectManager $manager)
     {
         $annonceur=new Annonceur();
-        $annonceur->setPrenom('benoit');
-        $annonceur->setNom('douche');
-        $annonceur->setEmail('benoit.douche@mail.com');
+        $annonceur->setPrenom('prenom1');
+        $annonceur->setNom('nom1');
+        $annonceur->setEmail('prenom1.nom1@mail.com');
         $annonceur->setPassword('123');
         $annonceur->setAnnonces($this->addReference('annonce_2',$annonceur));
         $manager->persist($annonceur);
@@ -36,9 +36,9 @@ class LoadAnnonceurFixture extends AbstractFixture implements OrderedFixtureInte
         $manager->flush();
 
         $annonceur=new Annonceur();
-        $annonceur->setPrenom('samuel');
-        $annonceur->setNom('besnier');
-        $annonceur->setEmail('samuel.besnier@mail.com');
+        $annonceur->setPrenom('prenom2');
+        $annonceur->setNom('nom2');
+        $annonceur->setEmail('prenom2.nom2@mail.com');
         $annonceur->setPassword('123');
         $annonceur->setAnnonces($this->addReference('annonce_3',$annonceur));
         $manager->persist($annonceur);
@@ -48,9 +48,9 @@ class LoadAnnonceurFixture extends AbstractFixture implements OrderedFixtureInte
         $manager->flush();
 
         $annonceur=new Annonceur();
-        $annonceur->setPrenom('jonathan');
-        $annonceur->setNom('picquette');
-        $annonceur->setEmail('jonathan.picquette@mail.com');
+        $annonceur->setPrenom('prenom3');
+        $annonceur->setNom('nom3');
+        $annonceur->setEmail('prenom3.nom3@mail.com');
         $annonceur->setPassword('123');
         $annonceur->setAnnonces($this->addReference('annonce_1',$annonceur));
         $manager->persist($annonceur);

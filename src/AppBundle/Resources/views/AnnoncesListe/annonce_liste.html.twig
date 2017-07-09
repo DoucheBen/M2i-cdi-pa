@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:AnnoncesListe:annonceListe{% endblock %}
+
+{% block body %}
+<h1>Welcome to the AnnoncesListe:annonceListe page</h1>
+<ul>
+    {% for annonce in annonces %}
+    <li>{{ annonce.titre }}<br>
+        {{ annonce.texte }}<br>
+        {{ annonce.prix }}<br>
+        par {{ annonce.annonceur.prenom }} {{ annonce.annonceur.nom }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

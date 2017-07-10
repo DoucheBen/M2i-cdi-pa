@@ -1,17 +1,19 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}AppBundle:AnnoncesListe:annonceListe{% endblock %}
+{% block title %}Liste des Annonces{% endblock %}
 
 {% block body %}
-<h1>Welcome to the AnnoncesListe:annonceListe page</h1>
-<ul>
-    {% for annonce in annonces %}
-    <li>{{ annonce.titre }}<br>
-        {{ annonce.texte }}<br>
-        {{ annonce.prix }}<br>
-        par {{ annonce.annonceur.prenom }} {{ annonce.annonceur.nom }}
-    </li>
-    {% endfor %}
-</ul>
+<h1 class="text-primary">Bienvenue sur liste des annonces</h1>
+    <div class="list-group-item">
+        <ul>
+            {% for annonce in annonces %}
+                <li>{{ annonce.titre }}<br>
+                    {{ annonce.texte }}<br>
+                    {{ annonce.prix }}<br>
+                    par {{ annonce.annonceur.prenom }} {{ annonce.annonceur.nom }}
+                </li>
+            {% endfor %}
+        </ul></div>
+
 
 {% endblock %}

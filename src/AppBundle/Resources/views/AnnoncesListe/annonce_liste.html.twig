@@ -1,6 +1,28 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}Liste des Annonces{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('dependencies/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('dependencies/bootstrap/dist/css/bootstrap-theme.min.css') }}">
+    <style>
+        #page {
+            padding-top: 75px;
+        }
+
+        body {
+            background-color: hsl(45, 19%, 82%);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: #0f0f0f;
+            color: #ffcc00;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
 
 {% block body %}
 <h1 class="text-primary">Bienvenue sur liste des annonces</h1>

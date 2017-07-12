@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class AnnoncesListeController extends Controller
 {
     /**
-     * @Route("/annonceListe")
+     * @Route("/annonceListe",name="annonce_liste")
      */
     public function annonceListeAction()
     {
